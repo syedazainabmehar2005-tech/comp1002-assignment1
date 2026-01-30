@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+
+    <!-- 
+        COMP 1002 - Assignment 1
+        This file demonstrates semantic HTML5, accessibility, and clean structure.
+        Comments explain why each section and element is used.
+    -->
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <!-- The header contains the main identity information for the resume -->
+    <header>
+        <h1>Your Name</h1>
+        <p>City, Province • your.email@example.com • (123) 456‑7890</p>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <!-- Main holds all primary resume content for screen readers and structure -->
+    <main>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <!-- Section used to group introductory content about the person -->
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>
+                <!-- Short summary helps readers quickly understand your background -->
+                A brief professional summary describing your goals and strengths.
+            </p>
+        </section>
+
+        <!-- ===== SKILLS SECTION ===== -->
+        <!-- Unordered list is appropriate for listing skills without ranking -->
+        <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li>HTML5 & Semantic Structure</li>
+                <li>CSS Basics</li>
+                <li>Communication & Teamwork</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <!-- ===== EXPERIENCE SECTION ===== -->
+        <!-- Each job is an article because it represents a standalone piece of content -->
+        <section aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Work Experience</h2>
+
+            <article>
+                <h3>Job Title — Company Name</h3>
+                <p><strong>2023 – Present</strong></p>
+                <ul>
+                    <!-- Bullet points make responsibilities easy to scan -->
+                    <li>Describe your responsibilities and achievements.</li>
+                    <li>Use clear, concise bullet points.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Job Title — Company Name</h3>
+                <p><strong>2021 – 2023</strong></p>
+                <ul>
+                    <li>Another example of job duties.</li>
+                    <li>Highlight accomplishments.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- ===== EDUCATION SECTION ===== -->
+        <!-- Education is grouped in its own section for clarity -->
+        <section aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
+            <article>
+                <h3>Program Name — School Name</h3>
+                <p><strong>2024 – Present</strong></p>
+                <p>Brief description of your program or achievements.</p>
+            </article>
+        </section>
+
+        <!-- ===== PROJECTS SECTION ===== -->
+        <!-- Links include descriptive text for accessibility -->
+        <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <article>
+                <h3>Project Title</h3>
+                <p>Short description of what you built or learned.</p>
+                <a href="#" aria-label="View project online">View Project</a>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Footer contains closing information and copyright -->
+    <footer>
+        <p>&copy; 2026 Your Name — All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
